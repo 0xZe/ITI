@@ -1,2 +1,2 @@
 # ITI
-This Repo contains ITI Labs Solutions
+This repo contains ITI labs solutions
