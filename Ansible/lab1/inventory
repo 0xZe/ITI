@@ -1,0 +1,12 @@
+172.17.0.3
+
+[web_servers]
+172.17.0.2
+
+[database_servers]
+3.87.24.252
+3.87.24.253
+
+[full_stack:children]
+web_servers
+database_servers
