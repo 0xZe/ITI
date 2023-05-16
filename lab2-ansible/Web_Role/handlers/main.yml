@@ -1,0 +1,14 @@
+---
+# handlers file for web_role
+- name: Copy files
+  copy:
+    src: "{{ item }}"
+    dest: "/var/www/html/{{ item }}"
+  loop: "{{ file_list }}"
+  notify: Restart service
+
+- name: Restart service
+  sysvinit:
+    name: nginx
+    state: restarted
+  listen: Copy files
