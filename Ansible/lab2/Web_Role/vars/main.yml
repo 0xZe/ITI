@@ -1,0 +1,8 @@
+---
+# vars file for web_role
+
+package_name: mysql-server
+
+items: 
+
+

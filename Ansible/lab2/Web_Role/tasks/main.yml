@@ -1,0 +1,14 @@
+---
+# tasks file for web_role
+- name: update the yum packages
+  package:
+    update_cache: yes
+
+- name: Install the latest version of mysql-server
+  package:
+    name:
+      - "{{ package_name }}"
+    state: latest
+  notify:
+    - Copy test.html
+
